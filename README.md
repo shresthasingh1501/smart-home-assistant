@@ -1,81 +1,86 @@
+# Smart Home Assistant - Your Voice, Your Control
 
-# Voice Command Assistant
+## Effortlessly Manage Your Smart Home with AI-Powered Voice Commands!
 
-This is a simple Streamlit application that records audio commands, transcribes them using OpenAI's Whisper model, processes the command with GPT-4o, and provides a structured JSON output. The assistant also converts the response text into speech.
+This project empowers you to control your smart home devices using natural language voice commands. Leveraging the power of OpenAI's GPT-4 and Whisper models, this assistant understands your intent and translates it into actionable instructions. Imagine controlling your lights, music, and more with just your voice!
 
-## Features
+**Key Features:**
 
-- **Record Audio:** Capture voice commands using your microphone.
-- **Transcription:** Transcribe recorded audio to text using OpenAI's Whisper model.
-- **Command Processing:** Interpret the transcribed command and generate a structured JSON response with GPT-4o.
-- **Text-to-Speech:** Convert the JSON response to speech using OpenAI's text-to-speech model.
-- **Streamlit Interface:** User-friendly web interface for interaction.
+* **Intuitive Voice Control:**  Interact with your smart home using natural language commands.
+* **Intelligent Command Processing:** GPT-4 interprets your commands and generates structured JSON for device control.
+* **Seamless Integration:**  Easily adaptable to various smart home ecosystems (future development).
+* **Real-time Transcription:**  Whisper accurately transcribes your voice commands into text.
+* **Text-to-Speech Feedback:**  Receive clear and concise audio responses from the assistant.
+* **User-Friendly Interface:**  Built with Streamlit for a simple and intuitive user experience.
 
-## Installation
+## Live Demo
 
-1. **Clone the repository:**
+Experience the future of smart home control with our interactive demo hosted on Hugging Face Spaces:
+
+[![Hugging Face Spaces](https://img.shields.io/badge/Hugging%20Face-Spaces-blue)](https://shresthasingh-smart-home-assistant.hf.space) 
+
+## Workflow
+
+Here's a visual representation of how the Smart Home Assistant works:
+
+```mermaid
+graph LR
+    A[Voice Command] --> B(Record Audio)
+    B --> C(Whisper Transcription)
+    C --> D{GPT-4 Command Processing}
+    D --> E[JSON Output (Device Control)]
+    D --> F[Text Response]
+    F --> G(Text-to-Speech)
+    G --> H[Audio Response]
+```
+
+## Getting Started
+
+1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/yourusername/voice-command-assistant.git
-   cd voice-command-assistant
+   git clone https://github.com/shresthasingh1501/smart-home-assistant.git
    ```
 
-2. **Install dependencies:**
+2. **Install Dependencies:**
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Install `pyaudio` (if not installed):**
-   - On Windows:
-     ```bash
-     pip install pipwin
-     pipwin install pyaudio
-     ```
-   - On macOS:
-     ```bash
-     brew install portaudio
-     pip install pyaudio
-     ```
-   - On Linux:
-     ```bash
-     sudo apt-get install python3-pyaudio
-     pip install pyaudio
-     ```
+3. **Obtain an OpenAI API Key:**
+   * Visit [https://platform.openai.com/account/api-keys](https://platform.openai.com/account/api-keys) to get your API key.
 
-## Usage
+4. **Update `app.py`:**
+   * Replace `""` with your actual OpenAI API key.
 
-1. **Run the Streamlit application:**
+5. **Run the Application:**
    ```bash
    streamlit run app.py
    ```
 
-2. **Start Recording:**
-   - Click the "Start Recording" button on the web interface to record your voice command.
+## Usage
 
-3. **Transcription and Command Processing:**
-   - The application will transcribe your audio and generate a JSON response based on the command.
-
-4. **Text-to-Speech:**
-   - The JSON response will be converted to speech and played back through the interface.
+1. **Open the Streamlit Interface:** Access the provided URL in your web browser.
+2. **Click "Start Recording":**  Speak your smart home command clearly.
+3. **View Results:** The app will display the transcribed text, the generated JSON output, and provide an audio response.
 
 ## Example Commands
 
-- "Play Taylor Swift on Spotify"
-- "What's the weather like in New York?"
+* "Turn on the living room lights."
+* "Set the bedroom temperature to 70 degrees."
+* "Play some relaxing music on Spotify."
 
 ## Important Notes
 
-- **API Key:** The application uses an OpenAI API key for processing commands. The key is hardcoded in the script for testing purposes. Replace it with your own API key and consider using environment variables or a secure vault for production environments.
-- **Security Warning:** Avoid hardcoding sensitive information such as API keys in your code, especially in production.
+* **API Key:**  The application requires an OpenAI API key. Replace the placeholder with your key for functionality.
+* **Security:**  Avoid hardcoding API keys in production environments. Consider using environment variables or a secure vault.
+* **Future Development:**  Integration with specific smart home platforms is planned for future releases.
 
 ## Contributing
 
-Feel free to fork this repository and submit pull requests if you have any improvements or fixes.
+Contributions, issues, and feature requests are welcome! Feel free to check the issues page if you want to contribute.
 
 ## License
 
-This project is licensed under the MIT License.
+MIT
 
----
-
-Created by Shrestha Singh
-
+**Created by Shrestha Singh**
