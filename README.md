@@ -28,7 +28,7 @@ graph LR
     A[Voice Command] --> B(Record Audio)
     B --> C(Whisper Transcription)
     C --> D{GPT-4 Command Processing}
-    D --> E[JSON Output (Device Control)]
+    D --> E[JSON Output Device Control]
     D --> F[Text Response]
     F --> G(Text-to-Speech)
     G --> H[Audio Response]
