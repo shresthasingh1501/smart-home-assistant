@@ -7,7 +7,7 @@ import pyaudio
 import wave
 # Initialize OpenAI client with hardcoded API key
 # WARNING: This is not secure and should only be used for testing
-client = OpenAI(api_key="sk-GeJ-zPXVgIGC2UIhA42dvW2g6lsc9SXjkHMsU9S5EgT3BlbkFJiG94ZfVUll-OgSkIivuBYEa3xGIErTL_u6DSQDUt4A")
+client = OpenAI(api_key="")
 
 # System prompt for GPT-4
 SYSTEM_PROMPT = """
