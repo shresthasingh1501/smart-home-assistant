@@ -4,15 +4,6 @@
 
 This project empowers you to control your smart home devices using natural language voice commands. Leveraging the power of OpenAI's GPT-4 and Whisper models, this assistant understands your intent and translates it into actionable instructions. Imagine controlling your lights, music, and more with just your voice!
 
-**Key Features:**
-
-* **Intuitive Voice Control:**  Interact with your smart home using natural language commands.
-* **Intelligent Command Processing:** GPT-4 interprets your commands and generates structured JSON for device control.
-* **Seamless Integration:**  Easily adaptable to various smart home ecosystems (future development).
-* **Real-time Transcription:**  Whisper accurately transcribes your voice commands into text.
-* **Text-to-Speech Feedback:**  Receive clear and concise audio responses from the assistant.
-* **User-Friendly Interface:**  Built with Streamlit for a simple and intuitive user experience.
-
 ## Live Demo
 
 Experience the future of smart home control with our interactive demo hosted on Hugging Face Spaces:
@@ -33,6 +24,17 @@ graph LR
     F --> G(Text-to-Speech)
     G --> H[Audio Response]
 ```
+
+**Key Features:**
+
+* **Intuitive Voice Control:**  Interact with your smart home using natural language commands.
+* **Intelligent Command Processing:** GPT-4 interprets your commands and generates structured JSON for device control.
+* **Seamless Integration:**  Easily adaptable to various smart home ecosystems (future development).
+* **Real-time Transcription:**  Whisper accurately transcribes your voice commands into text.
+* **Text-to-Speech Feedback:**  Receive clear and concise audio responses from the assistant.
+* **User-Friendly Interface:**  Built with Streamlit for a simple and intuitive user experience.
+
+
 
 ## Getting Started
 
